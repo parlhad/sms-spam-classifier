@@ -103,7 +103,7 @@ MODEL_PATH = BASE_DIR / "model.pkl"
 VECTORIZER_PATH = BASE_DIR / "vectorizer.pkl"
 
 
-@st.cache_resource
+
 def load_artifacts():
     if not MODEL_PATH.exists():
         raise FileNotFoundError("model.pkl was not found.")
