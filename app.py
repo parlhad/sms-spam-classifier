@@ -9,6 +9,13 @@ import pandas as pd
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
+# Download required NLTK data for Streamlit Cloud
+nltk.download("punkt", quiet=True)
+nltk.download("punkt_tab", quiet=True)
+nltk.download("stopwords", quiet=True)
+
+ps = PorterStemmer()
+
 # ---------------------------------------------------------
 # Page configuration
 # ---------------------------------------------------------
